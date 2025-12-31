@@ -17,6 +17,13 @@ public class JsonUtil {
         mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
     }
 
+    /**
+     * Converts an object to its JSON string representation.
+     *
+     * @param obj the object to be converted to JSON
+     * @return a JSON string representation of the object
+     * @throws RuntimeException if the object cannot be serialized to JSON
+     */
     public static String toJson(Object obj) {
         try {
             return mapper.writeValueAsString(obj);
@@ -25,6 +32,15 @@ public class JsonUtil {
         }
     }
 
+    /**
+     * Converts a JSON string to an object of the specified class type.
+     *
+     * @param <T> the type of the object to be returned
+     * @param json the JSON string to be converted
+     * @param clazz the class type to convert the JSON string into
+     * @return an instance of the specified class type with data populated from the JSON string
+     * @throws RuntimeException if the JSON string cannot be processed or mapped to the specified class type
+     */
     public static <T> T toModel(String json, Class<T> clazz) {
         try {
             return mapper.readValue(json, clazz);
