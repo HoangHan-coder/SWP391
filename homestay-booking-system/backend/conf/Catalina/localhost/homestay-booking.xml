@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="D:\SWP\Project-Homestay\homestay-booking-system\backend\src\main">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="D:/SWP/Project-Homestay/homestay-booking-system/backend/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+    <PostResources base="C:/Users/PC/.m2/repository/com/microsoft/sqlserver/mssql-jdbc/12.8.0.jre11/mssql-jdbc-12.8.0.jre11.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/mssql-jdbc-12.8.0.jre11.jar"/>
+    <PostResources base="C:/Users/PC/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.20.1/jackson-databind-2.20.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jackson-databind-2.20.1.jar"/>
+    <PostResources base="C:/Users/PC/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.20/jackson-annotations-2.20.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jackson-annotations-2.20.jar"/>
+    <PostResources base="C:/Users/PC/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.20.1/jackson-core-2.20.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jackson-core-2.20.1.jar"/>
+    <PostResources base="C:/Users/PC/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.20.1/jackson-datatype-jsr310-2.20.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jackson-datatype-jsr310-2.20.1.jar"/>
+  </Resources>
+</Context>
