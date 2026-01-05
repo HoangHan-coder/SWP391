@@ -31,8 +31,8 @@ public class RoomDAO {
         String sql = """
             INSERT INTO Room
             (homestay_id, room_number, room_type, price_per_hour,
-             max_guests, area_m2, description, status, is_delete)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0)
+             max_guests, area_m2, description, status, quantity_room, is_delete)
+            VALUES (?, ?, ?, ?, ?, ?, ?,?, ?, 0)
         """;
 
         try (Connection c = DBconnection.getConnection();
@@ -46,7 +46,7 @@ public class RoomDAO {
             ps.setObject(6, room.getAreaM2());
             ps.setString(7, room.getDescription());
             ps.setString(8, room.getStatus());
-
+            ps.setInt(9, room.getQuantity());
             ps.executeUpdate();
         }
     }

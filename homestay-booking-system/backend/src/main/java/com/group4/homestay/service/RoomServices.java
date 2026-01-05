@@ -33,6 +33,7 @@ public class RoomServices {
             room.setMaxGuests(dto.getMaxGuests());
             room.setAreaM2(dto.getAreaM2());
             room.setDescription(dto.getDescription());
+            room.setQuantity(dto.getQuantity());
             room.setStatus(dto.getStatus());
 
             dao.insert(room);

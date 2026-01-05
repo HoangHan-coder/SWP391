@@ -15,6 +15,7 @@ public class Room {
     private int maxGuests;
     private Integer areaM2;
     private String description;
+    private Integer quantity;
     private String status;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
@@ -114,6 +115,14 @@ public class Room {
 
     public void setDelete(boolean delete) {
         isDelete = delete;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }
 

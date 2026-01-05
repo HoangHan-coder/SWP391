@@ -12,7 +12,16 @@ public class RoomResponseDTO {
     private Integer maxGuests;
     private Integer areaM2;
     private String description;
+    private Integer quantity;
     private String status;
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
 
     public Integer getRoomId() {
         return roomId;
